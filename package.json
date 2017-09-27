@@ -19,7 +19,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
-    "avoriaz": "4.2.0",
     "babel-core": "^6.22.1",
     "babel-eslint": "^7.1.1",
     "babel-loader": "^7.1.1",
@@ -58,6 +57,7 @@
     "vue-loader": "^13.0.4",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.4.2",
+    "vue-test-utils": "git+https://github.com/vuejs/vue-test-utils.git",
     "webpack": "^2.6.1",
     "webpack-bundle-analyzer": "^2.2.1",
     "webpack-dev-middleware": "^1.10.0",

@@ -1,32 +1,23 @@
-import {shallow} from 'avoriaz';
+import {shallow} from 'vue-test-utils';
 import Hello from '../Hello';
 
-describe('Bar.vue', () => {
+describe('Hello.vue', () => {
   it('should match snapshot', () => {
     // when
     const wrapper = shallow(Hello);
 
     // then
-    expect(wrapper.html()).toMatchSnapshot();
+    expect(wrapper.element).toMatchSnapshot();
   });
 
   describe('h1', () => {
-    it('should contain one h1 element', () => {
-      // when
-      const wrapper = shallow(Hello);
-
-      // then
-      let title = wrapper.find('h1');
-      expect(title.length).toBe(1);
-    });
-
     it('should contain default message', () => {
       // when
       const wrapper = shallow(Hello);
 
       // then
       const title = wrapper.find('h1');
-      expect(title[0].text()).toContain('Welcome'); // default
+      expect(title.text()).toContain('Welcome'); // default
     });
 
     it('should update when msg data is changed', () => {
@@ -36,19 +27,19 @@ describe('Bar.vue', () => {
       // then
       const title = wrapper.find('h1');
       wrapper.setData({msg: 'kikoo'});
-      expect(title[0].text()).toContain('kikoo');
+      expect(title.text()).toContain('kikoo');
     });
 
     it('should contain name in props', () => {
+      // given
+      const props = {name: 'fake name'};
+
       // when
-      const wrapper = shallow(Hello, {propsData: {name: 'fake name'}});
+      const wrapper = shallow(Hello, {propsData: props});
 
       // then
       const title = wrapper.find('h1');
-      expect(title.length).toBe(1);
-
-      expect(title[0].text()).toContain('Welcome'); // default
-      expect(title[0].text()).toContain('fake name');
+      expect(title.text()).toContain('fake name');
     });
   });
 });
