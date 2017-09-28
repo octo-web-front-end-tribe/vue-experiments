@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App.vue should match snapshot 1`] = `
+<div
+  id="app"
+>
+  <img
+    src="./assets/logo.png"
+  />
+   
+  <router-link
+    exact=""
+    to="/"
+  >
+    Home
+  </router-link>
+   
+  <router-link
+    to="counter"
+  >
+    Counter
+  </router-link>
+   
+  <router-view />
+</div>
+`;
