@@ -11,13 +11,14 @@
   import ButtonCounter from '../ButtonCounter/ButtonCounter'
 
   export default {
+    name: 'counter',
     data () {
       return {
         total: 0
       }
     },
     methods: {
-      incrementTotal: function () {
+      incrementTotal () {
         this.total += 1
       }
     },

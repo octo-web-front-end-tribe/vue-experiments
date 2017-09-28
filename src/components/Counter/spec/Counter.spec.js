@@ -1,4 +1,6 @@
 import {shallow} from 'vue-test-utils';
+import ButtonCounter from '@/components/ButtonCounter/ButtonCounter';
+
 import Counter from '../Counter';
 
 describe('Counter.vue', () => {
@@ -20,16 +22,18 @@ describe('Counter.vue', () => {
     expect(paragraph.text()).toEqual('0');
   });
 
-  it('should increment counter on event increment', () => {
+  it('should increment counter on event increment from either buttons', () => {
     // given
     const wrapper = shallow(Counter);
+    let buttonCounters = wrapper.findAll(ButtonCounter);
 
     // when
-    wrapper.vm.incrementTotal();
+    buttonCounters.at(0).vm.$emit('increment');
+    buttonCounters.at(1).vm.$emit('increment');
     wrapper.update();
 
     // then
     let paragraph = wrapper.find('p');
-    expect(paragraph.text()).toEqual('1');
+    expect(paragraph.text()).toEqual('2');
   });
 });
