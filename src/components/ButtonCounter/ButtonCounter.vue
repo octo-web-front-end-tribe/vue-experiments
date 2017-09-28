@@ -4,7 +4,6 @@
 
 <script>
   export default {
-    name: 'component name',
     data () {
       return {
         counter: 0

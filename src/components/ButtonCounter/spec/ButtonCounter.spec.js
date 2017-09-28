@@ -7,6 +7,7 @@ describe('ButtonCounter.vue', () => {
     const wrapper = shallow(ButtonCounter);
 
     // then
+    expect(wrapper.element).toBeDefined();
     expect(wrapper.element).toMatchSnapshot();
   });
 

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter.vue should match snapshot 1`] = `
+<div
+  class="test"
+>
+  <h1>
+    counter
+  </h1>
+   
+  <p>
+    0
+  </p>
+   
+  <!---->
+   
+  <!---->
+</div>
+`;

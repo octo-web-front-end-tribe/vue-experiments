@@ -6,7 +6,6 @@
 
 <script>
   export default {
-    name: 'hello',
     props: {
       name: String
     },

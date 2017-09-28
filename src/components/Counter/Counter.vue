@@ -11,7 +11,6 @@
   import ButtonCounter from '../ButtonCounter/ButtonCounter'
 
   export default {
-    name: 'fakeComponent',
     data () {
       return {
         total: 0

@@ -7,6 +7,7 @@ describe('Hello.vue', () => {
     const wrapper = shallow(Hello);
 
     // then
+    expect(wrapper.element).toBeDefined();
     expect(wrapper.element).toMatchSnapshot();
   });
 
