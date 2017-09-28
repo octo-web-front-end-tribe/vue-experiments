@@ -74,6 +74,9 @@
     "not ie <= 8"
   ],
   "jest": {
+    "moduleNameMapper": {
+      "@/components/([^\\.]*)$": "<rootDir>/src/components/$1.vue"
+    },
     "moduleFileExtensions": [
       "js",
       "vue"
