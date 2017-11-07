@@ -8,19 +8,10 @@ exports[`App.vue should match snapshot 1`] = `
     src="./assets/logo.png"
   />
    
-  <router-link
-    exact=""
-    to="/"
-  >
-    Home
-  </router-link>
+  <!---->
    
-  <router-link
-    to="counter"
-  >
-    Counter
-  </router-link>
+  <!---->
    
-  <router-view />
+  <!---->
 </div>
 `;

@@ -17,6 +17,9 @@
         total: 0
       }
     },
+    mounted () {
+      console.log(`Total at initialization : ${this.total}`)
+    },
     methods: {
       incrementTotal () {
         this.total += 1

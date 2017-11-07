@@ -18,7 +18,7 @@ describe('Hello.vue', () => {
 
       // then
       const title = wrapper.find('h1');
-      expect(title.text()).toContain('Welcome'); // default
+      expect(title.text()).toContain('Welcome');
     });
 
     it('should update when msg data is changed', () => {
