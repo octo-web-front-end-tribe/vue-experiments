@@ -21,8 +21,8 @@
     },
     methods: {
       incrementCounter: function () {
-        this.counter += 1
-        this.$emit('increment')
+        this.counter += 1;
+        this.$emit('increment');
       }
     }
   }

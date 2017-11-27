@@ -14,16 +14,16 @@
     name: 'counter',
     data () {
       return {
-        total: 0
-      }
+        total: 0,
+      };
     },
     mounted () {
       console.log(`Total at initialization : ${this.total}`)
     },
     methods: {
       incrementTotal () {
-        this.total += 1
-      }
+        this.total += 1;
+      },
     },
     components: {
       ButtonCounter
