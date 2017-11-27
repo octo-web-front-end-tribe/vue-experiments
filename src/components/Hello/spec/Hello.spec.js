@@ -22,13 +22,15 @@ describe('Hello.vue', () => {
     });
 
     it('should update when msg data is changed', () => {
-      // when
+      // given
       const wrapper = shallow(Hello);
+
+      // when
+      wrapper.setData({msg: 'world'});
 
       // then
       const title = wrapper.find('h1');
-      wrapper.setData({msg: 'kikoo'});
-      expect(title.text()).toContain('kikoo');
+      expect(title.text()).toContain('world');
     });
 
     it('should contain name in props', () => {
