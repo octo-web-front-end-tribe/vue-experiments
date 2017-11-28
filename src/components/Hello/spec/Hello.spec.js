@@ -21,7 +21,7 @@ describe('Hello.vue', () => {
       expect(title.text()).toContain('Welcome');
     });
 
-    it('should update when message data is changed', () => {
+    it('should update h1 title when message data is changed', () => {
       // given
       const wrapper = shallow(Hello);
 
