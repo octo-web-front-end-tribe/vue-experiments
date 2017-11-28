@@ -21,12 +21,12 @@ describe('Hello.vue', () => {
       expect(title.text()).toContain('Welcome');
     });
 
-    it('should update when msg data is changed', () => {
+    it('should update when message data is changed', () => {
       // given
       const wrapper = shallow(Hello);
 
       // when
-      wrapper.setData({msg: 'world'});
+      wrapper.setData({message: 'world'});
 
       // then
       const title = wrapper.find('h1');

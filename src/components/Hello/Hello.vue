@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }} {{ name }}</h1>
+    <h1>{{ message }} {{ name }}</h1>
   </div>
 </template>
 
@@ -12,7 +12,7 @@
     },
     data () {
       return {
-        msg: 'Welcome'
+        message: 'Welcome'
       }
     }
   }
